@@ -1,6 +1,6 @@
 package pattern.decorator.predesign;
 
 public interface Ingredient {
-    void cost();
+    double cost();
     void describe();
 }

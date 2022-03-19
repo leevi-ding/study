@@ -1,0 +1,13 @@
+package pattern.factory.chicken;
+
+public abstract class Chicken {
+
+    public void cook(){
+        method1();
+        method2();
+    }
+
+    protected abstract void method1();
+
+    protected abstract void method2();
+}

@@ -7,8 +7,8 @@ public class Ormosia implements Ingredient {
     private double price = 0.28;
 
     @Override
-    public void cost() {
-        System.out.println("ormosia cost " + price);
+    public double cost() {
+        return price;
     }
 
     @Override

@@ -7,8 +7,8 @@ public class Chocolate implements Ingredient {
     private double price = 0.15;
 
     @Override
-    public void cost() {
-        System.out.println("chocolate cost " + price);
+    public double cost() {
+        return price;
     }
 
     @Override
