@@ -12,7 +12,7 @@ public class WeatherData {
     private double pressure;
     private double humidity;
 
-    private List<Display> displays = new ArrayList<>();
+    private final List<Display> displays = new ArrayList<>();
 
     public void change(double temperature, double pressure ,double humidity){
         this.temperature = temperature;
