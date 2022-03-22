@@ -1,11 +1,5 @@
 package pattern.command.designed;
 
-import pattern.command.designed.command.*;
-import pattern.command.industry.AirConditional;
-import pattern.command.industry.Curtain;
-import pattern.command.industry.Kettle;
-import pattern.command.industry.Television;
-
 public class Controller {
     private Command[] commands = new Command[7];
 
@@ -33,6 +27,16 @@ public class Controller {
     }
     public void function7(){
         commands[6].invoke();
+    }
+
+    public void executeAll(){
+        try {
+            for (Command command : commands) {
+                command.invoke();
+            }
+        }catch (ArrayIndexOutOfBoundsException e){
+            System.out.println("指令当前为空");
+        }
     }
 
 }
