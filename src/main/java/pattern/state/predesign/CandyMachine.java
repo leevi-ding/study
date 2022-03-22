@@ -11,22 +11,23 @@ public class CandyMachine extends AbstractCandyMachine {
 
     @Override
     public void payMoneyButton() {
+        System.out.print("payMoneyButton ------ ");
         if (money == 25) {
-            System.out.println("payMoneyButton ------ you have put 25 cents");
+            System.out.println("you have put 25 cents");
             return;
         }else {
             money = 25;
-            System.out.println("payMoneyButton ------ pay 25 cents");
+            System.out.println("pay 25 cents");
         }
     }
 
     @Override
     public void drawBackButton() {
+        System.out.print("drawBackButton ------ ");
         if (money == 25) {
-            System.out.println("drawBackButton ------ ");
             drawBack();
         } else {
-            System.out.println("drawBackButton ------ you don't put in 25 cents");
+            System.out.println("you don't put in 25 cents");
         }
     }
 
@@ -39,10 +40,9 @@ public class CandyMachine extends AbstractCandyMachine {
     public void rotateButton() {
         System.out.print("drawBackButton ------ ");
         if (money == 25) {
-
             dropOutCandy();
         }else{
-            System.out.println("drawBackButton ------ you don't put in 25 cents");
+            System.out.println("you don't put in 25 cents");
         }
     }
 
