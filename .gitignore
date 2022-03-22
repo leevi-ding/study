@@ -20,3 +20,5 @@
 *.rar
 
 /.idea/
+/target/
+/study.iml
