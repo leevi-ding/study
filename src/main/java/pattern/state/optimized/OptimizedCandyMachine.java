@@ -14,7 +14,7 @@ public class OptimizedCandyMachine extends AbstractCandyMachine {
         NO_MONEY,
         HAS_MONEY,
         SELL_CANDY,
-        SELL_OUT;
+        SELL_OUT
     }
 
     @Override
